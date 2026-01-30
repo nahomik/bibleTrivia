@@ -4,6 +4,10 @@ function App() {
   const [difficulty, setDifficulty] = useState('easy');
   const [questionData, setQuestionData] = useState(null);
   const [result, setResult] = useState(null);
+  const [question, setQuestion] = useState(null);
+  // const [difficulty, setDifficulty] = useState(null);
+
+
 
   // Fetch question whenever difficulty changes
   useEffect(() => {

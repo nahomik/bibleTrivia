@@ -13,13 +13,9 @@ console.log('🔥 CORRECT index.js IS RUNNING 🔥');
 
 // root test
 app.get('/', (req, res) => {
-  res.send('Bible Trivia API is very running');
+  res.send('Bible Trivia API is very very very running');
 });
 
-/**
- * GET /questions?difficulty=easy
- * returns 1 random question + answers (no is_correct)
- */
 app.get('/questions', async (req, res) => {
   const { difficulty } = req.query;
 
@@ -62,10 +58,6 @@ app.get('/questions', async (req, res) => {
   }
 });
 
-/**
- * POST /answer
- * validates answer + calculates score (anti-cheat)
- */
 app.post('/answer', async (req, res) => {
   const { user_id, question_id, answer_id, used_hint } = req.body;
 
